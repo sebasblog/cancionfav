@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <title>CancionFav</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+        p {
+            text-align: center;
+            font-size: 25px;
+        }
+        form {
+            text-align: center;
+            display:flexbox;
+            margin: 40px;
+        }
+        input {
+            font-size:25px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            margin: 10px;
+        }
+        ul {
+            text-align: center;
+            font-size: 30px;
+        }
+        button{
+            display: block !important;
+            font-size: 20px;
+            border-radius: 5px;
+            margin: 0px auto;
+            padding: 5px;
+            ;
+        }
+        table{
+            width: 75%;
+            height: 250px;
+            text-justify: distribute;
+            font-size: 35px;
+            margin: 0 auto;
+            text-align: center;
+            border: 3px solid black;
+            border-radius: 2px;
+            padding: 25px;
+            background-color: honeydew;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenid@ a CancionFav!</h1>
+    <h2>Instrucciones</h2>
+    <p>Rellena todos los campos para ir guardando y coleccionando tus canciones favoritas.</p>
+    <div id="container">
+        <form action="#">
+            <label for="anadir"></label>
+            <input type="text" name="anadir" id="nombre" placeholder="Nombre">
+            <input type="text" name="anadir" id="artista" placeholder="Artista">
+            <input type="text" name="anadir" id="album" placeholder="Album">
+            <input type="text" name="anadir" id="estilo" placeholder="Estilo">
+            <button id="boton" class="btn-success" type="reset" onclick="capturar();">Agregar</button>
+           
+        </form>
+    </div>
+
+            <div class="container">
+                <table class="table" id="tabla">
+                    <thead class="thead-inverse">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Artista</th>
+                            <th>Album</th>
+                            <th>Estilo</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
